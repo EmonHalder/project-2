@@ -36,6 +36,11 @@
     text-decoration: none; 
     font-size: 18px; 
     color: #424242;
+    text-align: center;
+}
+.nav-bar a:hover{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
 }
 .nav-bar{
     display: grid;
@@ -44,6 +49,7 @@
     height: 26px;
     text-align: right;
     margin-right: 150px;
+    
 }
 
 /* ---------header-description-------- */
@@ -79,6 +85,12 @@
     border-radius: 5px;
     border: 0px;
     margin-top:25px ;
+}
+.main-btn button:hover{
+    background-color: black;
+    color: orange;
+    transform:scale(0.9);
+    transition:all 0.7s;
 }
 .main-btn{
     display: flex;
@@ -151,6 +163,13 @@
     border: 0px;
     font-size: 20px;
 }
+/* --------hover:animation--------- */
+.image-description button:hover{
+    background-color: black;
+    color: orange;
+    transform:scale(0.9);
+    transition:all 0.9s;
+}
 
 /* -----------------
          main
@@ -163,7 +182,8 @@
     display: flex;
     /* grid-template-columns: repeat(2, 1fr); */
     justify-content: space-around;
-    margin-top: 130px;   
+    margin-top: 130px; 
+       
     
 }
 .main-title h2{
@@ -181,16 +201,18 @@
     margin-top: 24px;
 }
 .div-list {
-    width: 586px;
+    width: 0px;
     height: 78px;
     margin-top: 10px;
+    box-shadow: 1px 0px 8px -5px black;
 }
 .list{
-    border: 1px solid black;
+     
     width: 450px;
     height: 107px;
     padding: 20px;
     margin-bottom: 20px;
+    box-shadow: 1px 0px 7px -5px black;
 }
 .list p{
     color: #727272;
@@ -200,7 +222,9 @@
 .list h2{
     font-size: 20px;
     margin-top: 5px;
+     
 }
+ 
 .left-side{
     width: 450px;
     margin-top: 65px;
@@ -208,11 +232,15 @@
 }
 /* ---right-side---- */
 
- .right-side img{
+ .right-side {
     width: 700px;
     height: 980px;
     margin-right: 40px;
+    
  }
+
+ /* --------button--------- */
+
  .big-btn{
     width: 330px;
     height: 180px;
@@ -222,6 +250,7 @@
     border-radius: 5px;
     border: 0px;
  }
+  
  .big-btn span{
     font-size: 65px;
     font-weight: bolder;
@@ -231,6 +260,110 @@
     justify-content: center;
     margin-top: 70px;
  }
-  
+ /* --------experience------- */
+ .experience{
+    width: 450px;
+    height: 150px;
+    margin-left: 80px;
+    margin-top: 110px;
+ }
+ .experience h2{
+    font-size: 45px;
+    font-weight: bold;
+ }
+ .experience p{
+    color:#727272 ;
+    font-size: 16px;
+    margin-top: 20px;
+ }
+/* --------box-------- */
 
- 
+.box{
+    border: 1px solid  orange;
+    border-radius: 5px;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    padding: 30px 0px;  
+}
+/* ----------------animation-------------- */
+.box:hover{
+
+    transform:scale(0.9);
+    transition:all 0.7s;
+    cursor:pointer;
+    border: 2px solid black;
+}
+.box h2{
+    font-size: 35px;
+    color: #424242;
+    margin-top: 10px;
+}
+.box h5{
+    font-size: 16px;
+    color: #727272;
+    margin-top: 10px;
+}
+.sub-box{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 90px;
+}
+.main-box{
+    margin-top: 400px;
+    width: 1200px;
+    margin: auto;
+     
+     
+}
+/* ---------article---------- */
+.article{
+    width: 540px;
+    height: 130px;
+    text-align: center;
+    margin-top:170px ;
+}
+.article h2{
+    font-size: 45px;
+    color: #131313;
+}
+.article p{
+    font-size: 16px;
+    color: #727272;
+    margin-top: 20px;
+}
+.head-article{
+    display: flex;
+    justify-content: center;
+}
+
+/* ---------logo------------ */
+
+ .logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1250px;
+    height: 100px;
+    margin-left: 65px;
+    margin-top: 60px;
+ }
+ /* -----------footer------------- */
+ .footer{
+    width: 1250px;
+    height:80px;
+    background-color: #FFF4E7;
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 3px;
+    margin-bottom: 50px;
+    color: #424242;
+ }
+ .footer-parents{
+    display: flex;
+    justify-content: center;
+ }
+
