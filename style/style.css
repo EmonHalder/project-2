@@ -375,6 +375,9 @@
 /* ------mobile-device----- */
 
 @media only screen  and (max-width:688px){
+    .main-parents{
+        display: none;
+    }
       
     .navigationbar{
         flex-direction: column;
