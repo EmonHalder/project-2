@@ -308,6 +308,8 @@
     display: flex;
     justify-content: space-around;
     margin-top: 90px;
+    width: 1200px;
+    height: 200px;
 }
 .main-box{
     margin-top: 400px;
@@ -353,17 +355,126 @@
     width: 1250px;
     height:80px;
     background-color: #FFF4E7;
-    margin-top: 130px;
+    margin-top: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 20px;
     border-radius: 3px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     color: #424242;
  }
  .footer-parents{
     display: flex;
     justify-content: center;
  }
+
+ /*---------------------
+        media query
+------------------------ */
+/* ------mobile-device----- */
+
+@media only screen  and (max-width:688px){
+      
+    .navigationbar{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav-bar{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+    .baner img{
+        width: 100%;
+        height: 100%;
+    }
+    .baner{
+        flex-direction: column;
+    }
+    .nav-title{
+        margin:0px;
+        padding: 20px;
+        margin-left: 10px;
+    }
+    .main-header{
+        width: 100%;
+        height: 1000px;
+    }
+
+    .main-description{
+        flex-direction: column;
+        height: 400px;
+    }
+    .sub-description p {
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .section-head{
+        flex-direction: column;
+    }
+    .box-image{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        margin: auto;
+    }
+    .box-image, .imu{
+        width: 100%;
+        height: 100%;
+    }
+    .image-description{
+        width: 100%;
+        text-align: center;
+        margin: 50px 0px;
+    }
+    .image-description p{
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .btn-div{
+        flex-direction: column;
+        margin-left: 30px;
+    }
+    .experience{
+        width: 100%;
+        margin: 0px;
+        margin-top: 80px;
+        margin-left: 30px;
+}
+    .sub-box{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: 1100px;
+        margin-top: 60px;
+        margin-left: 95px;
+}
+    .article{
+        margin-top: 50px;
+        margin-bottom: 50px;
+}
+    .main-logo{
+        height: 500px;
+}
+    .logo{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 60px;
+        width: 100px;
+        height: 400px;
+        margin-left: 150px;
+}
+    .footer{
+        flex-direction: column;
+        width: 90%;
+        text-align: center;
+}
+
+
+}
+   
+    
+
 
